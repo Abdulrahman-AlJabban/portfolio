@@ -23,7 +23,7 @@
 */
 
 #cv-nav {
-	visibility: hidden;
+	display: none;
 }
 
 /* - Header */
@@ -369,8 +369,11 @@
 	}
 
 	#cv-nav {
-		visibility:visible;
+		display: block;
 	}
+	.pic-ctn {
+		height: 200px;
+	  }
 	.header .top-menu {
 		position: relative;
 		top: 0;
@@ -549,7 +552,9 @@
 	background-position: center center;
 	background-size: cover;
 }
-
+.pic-ctn {
+	height: 300px;
+  }
 
 @media (max-width: 1199px) {
 	.background-bg {
@@ -571,6 +576,9 @@
 		height: 450px;
 	}
 
+	.pic-ctn {
+		height: 200px;
+	  }
 }
 
 /* - Section */
@@ -3094,9 +3102,7 @@ iframe, object {
 
 
 
-.pic-ctn {
-	height: 300px;
-  }
+
   
   @keyframes display {
 	0% {
