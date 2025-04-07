@@ -927,6 +927,13 @@ blockquote {
 	font-family: "Poppins";
 }
 
+.company-name {
+	transition: .8s;
+}
+
+.company-name:hover {
+	font-size: 20px;
+}
 
 /* - Animations */
 /* preloader */
