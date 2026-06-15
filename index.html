@@ -1,1077 +1,211 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f0f10" />
+  <title>Abdul-Rahman Al-Jabban — Backend Laravel developer</title>
+  <meta name="description" content="Abdul-Rahman Al-Jabban — back-end developer. Laravel, MySQL, APIs. Damascus, Syria." />
 
-	<!-- Meta -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="description" content="Personal Portfolio Template" />
-	<meta name="keywords" content="resposnive, resume, personal, personal portfolio, cv, myour, portfolio" />
-	<meta name="author" content="beshleyua" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
 
-	<!-- Title -->
-	<title>Abdul-rahman Al-jabban</title>
-
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
-
-	<!-- Styles -->
-	<link rel="stylesheet" href="css/basic.css" />
-	<link rel="stylesheet" href="css/layout.css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" />
-	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/jarallax.css" />
-	<link rel="stylesheet" href="css/owl.carousel.css" />
-	<link rel="stylesheet" href="css/swiper.css" />
-	<link rel="stylesheet" href="css/fontawesome.css" />
-
-	<!-- Theme Colors
-	<link rel="stylesheet" href="css/theme-colors/blue.css" />
-	<link rel="stylesheet" href="css/theme-colors/green.css" />
-	<link rel="stylesheet" href="css/theme-colors/orange.css" />
-	<link rel="stylesheet" href="css/theme-colors/brown.css" />
-	<link rel="stylesheet" href="css/theme-colors/purple.css" />
-	<link rel="stylesheet" href="css/theme-colors/red.css" />
-	<link rel="stylesheet" href="css/theme-colors/beige.css" />
-	<link rel="stylesheet" href="css/theme-colors/green_light.css" />
-	<link rel="stylesheet" href="css/theme-colors/yellow.css" />
-	<link rel="stylesheet" href="css/theme-colors/yellow_light.css" />
-	-->
-		
-	<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<link rel="shortcut icon" href="images/favicons/favicon.ico">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
-<body class="home">
-
-	<!-- Preloader -->
-	<div class="preloader">
-		<div class="box-1">
-			<div class="centrize full-width">
-				<div class="vertical-center">
-					<div class="spinner">
-						<div class="lines"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="box-2"></div>
-	</div>
-	
-	<!-- Container -->
-	<div class="container">
-	
-		<!-- Header -->
-		<header class="header">
-
-			<!-- logo -->
-			<div class="logo">
-				<a href="#">
-					<span class="logo-lnk" style="max-width: none">Abdul-rahman<br />Al-Jabban</span>
-				</a>
-			</div>
-
-			<!-- menu button -->
-			<a href="#" class="menu-btn"><span></span></a>
-				
-			<!-- download cv button -->
-			<a href="cv/Abdul-rahman Al-Jabban Resume.pdf" class="btn download-cv-btn" download>
-				<span class="animated-button"><span>Download CV</span></span>
-				<i class="icon fas fa-download"></i>
-			</a>
-
-			<!-- header sidebar -->
-			<div class="header-sidebar">
-
-				<!-- top menu -->						
-				<div class="top-menu">
-					<div class="top-menu-nav">	
-						<div class="menu-topmenu-container">
-							<ul class="menu">
-								<li class="menu-item">
-									<a href="#section-started">
-										<span class="animated-button"><span>Home</span></span>
-									</a>
-								</li>
-								<li class="menu-item">
-									<a href="#section-services">
-										<span class="animated-button"><span>Qualifications</span></span>
-									</a>
-								</li>
-								<li class="menu-item">
-									<a href="#section-experience">
-										<span class="animated-button"><span>Resume</span></span>
-									</a>
-								</li>
-								<li class="menu-item">
-									<a href="#section-portfolio">
-										<span class="animated-button"><span>Portfolio</span></span>
-									</a>
-								</li>
-								<li class="menu-item">
-									<a href="#section-contacts">
-										<span class="animated-button"><span>Contact</span></span>
-									</a>
-								</li>
-								<!-- <li class="menu-item" id="cv-nav">
-									
-								</li> -->
-							</ul>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</header>
-		
-		<!-- Wrapper -->
-		<div class="wrapper">
-
-			<!-- Background -->
-			<div class="background-bg">
-				<div class="background-filter" style="background-color: #c6e6e2 !important">
-					<div class="background-img" style="background-image: url(images/c.jpg);"></div>
-				</div>
-			</div>
-
-			<!-- Section Started -->
-			<div class="section started" id="section-started">
-				<div class="centrize full-width">
-					<div class="vertical-center">
-
-						<!-- title -->
-						<h1 class="h-title">
-							Abdul-rahman <br />Al-Jabban
-						</h1>
-
-						<!-- content started -->
-						<div class="started-content" style="max-width: none">
-
-							<!-- subtitle -->
-							<div class="h-subtitles">
-								<div class="h-subtitle typing-subtitle">
-									<p class="mb-5">Laravel Back-End developer</p>
-								</div>
-								<span class="typed-subtitle"></span>
-							</div>
-
-							<!-- text -->
-							<div class="h-tet">
-								As a Laravel developer, I thrive on creating well-structured projects with clean code. 
-In 2020, my journey began during my graduation project. Over the years, I've gained 
-valuable experience working on various projects and refactoring existing code, for 
-different companies
-							</div>
-
-							<a id="cv-nav" href="cv/Abdul-rahman Al-Jabban Resume.pdf" class="btn download-cv-btn" style="margin-top: 20px;" download>
-								<span class="animated-button"><span>Download CV</span></span>
-								<i class="icon fas fa-download"></i>
-							</a>
-							
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-			<!-- Section Service -->
-			<div class="section service" id="section-services">
-				<div class="content">
-
-					<!-- title -->
-					<div class="titles">
-						<div class="title">Qualifications</div>
-						<div class="subtitle">Why you should hire me</div>
-					</div>
-
-					<!-- services items -->
-					<div class="service-items">
-
-						<div class="service-col">
-							<div class="service-item">
-								<div class="icon"><i class="fas fa-code"></i></div>
-								<div class="name">Profissional, <br />clean code</div>
-								<div class="single-post-text">
-									<p>
-I have made multiple projects so i have enough experience to come out with clear, understandable, and maintainable code.									</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="service-col">
-							<div class="service-item">
-								<div class="icon"><i class="icon fas fa-brain"></i></div>
-								<div class="name">Analytical <br />thinking </div>
-								<div class="single-post-text">
-									<p>
-By collecting the right information, I can make the accurate decisions and develop solutions that are supported by evidence.									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="service-col">
-							<div class="service-item">
-								<div class="icon"><i class="icon fas fa-bolt"></i></div>
-								<div class="name">High <br />performance</div>
-								<div class="single-post-text">
-									<p>
-										I can acheive that By building DataBase in the right way and Writing quieries with best practices.
-
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="service-col">
-							<div class="service-item">
-								<div class="icon"><i class="icon fas fa-stopwatch"></i></div>
-								<div class="name">Fast <br />delevery</div>
-								<div class="single-post-text">
-									<p>
-										After building multiple projects i earned the ability to know the estimated time to complete my tasks.
-									</p>
-								</div>
-							</div>
-						</div>
-
-
-					</div>
-
-					<div class="clear"></div>
-				</div>
-			</div>
-
-			<!-- Section Design Skills -->
-			<div class="section skills" id="section-skills">
-				<div class="content">
-
-					<!-- title -->
-					<div class="titles">
-						<div class="title">Skills</div>
-						<div class="subtitle">My abilities</div>
-					</div>
-
-					<!-- skills items -->
-					<div class="skills percent">
-						<ul>
-							<li>
-								<div class="name">Laravel</div>
-								<div class="single-post-text">
-								</div>
-								<div class="progress">
-									<div class="percentage" style="width: 100%;">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="name">MySQL</div>
-								<div class="single-post-text">
-								</div>
-								<div class="progress">
-									<div class="percentage" style="width: 100%;">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="name">System analysis</div>
-								<div class="single-post-text">
-
-								</div>
-								<div class="progress">
-									<div class="percentage" style="width: 100%;">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="name">RESTful API</div>
-								<div class="single-post-text">
-								</div>
-								<div class="progress">
-									<div class="percentage" style="width: 100%;">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="name">Coding Principles</div>
-								<div class="single-post-text">
-								</div>
-								<div class="progress">
-									<div class="percentage" style="width: 100%;">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="name">Git/Github</div>
-								<div class="single-post-text">
-								</div>
-								<div class="progress">
-									<div class="percentage" style="width: 100%;">
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-
-
-			<!-- Section Resume -->
-			<div class="section resume" id="section-experience">
-				<div class="content">
-
-					<!-- title -->
-					<div class="titles">
-						<div class="title">Experience</div>
-						<div class="subtitle">Worked with</div>
-					</div>
-
-					<!-- resume items -->
-					<div class="content-carousel">
-						<div class="owl-carousel" data-slidesview="2" data-slidesview_mobile="1">
-
-							<div class="item">
-								<div class="resume-item active">
-									<div class="date">2021 - Present</div>
-									<div class="name">Freelance</div>
-									<div class="single-post-text" style="margin-left:20px">
-										<p>
-											Back-End Laravel developer.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="resume-item active">
-									<div class="date">2024 - Present</div>
-									<div class="name">Darrebni</div>
-									<div class="single-post-text" style="margin-left:20px">
-										<p>
-											Back-End Laravel trainer .
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="resume-item active">
-									<div class="date">2024 - 2025</div>
-									<div class="name">DevedUp</div>
-									<div class="single-post-text" style="margin-left:20px">
-										<p>
-											Back-End Laravel developer.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="resume-item active">
-									<div class="date">2023 - 2024</div>
-									<div class="name">TrendDXB</div>
-									<div class="single-post-text" style="margin-left:20px">
-										<p>
-											Team Leader & Back-End developer .
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="resume-item">
-									<div class="date">2022 - 2023</div>
-									<div class="name">Limitless <br />group</div>
-									<div class="single-post-text" style="margin-left:20px">
-										<p>
-											Back-End Laravel developer.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="resume-item">
-									<div class="date">2021 - 2022</div>
-									<div class="name">In-soft <br />Online</div>
-									<div class="single-post-text" style="margin-left:20px">
-										<p>
-											Back-End Laravel developer.
-										</p>
-									</div>
-								</div>
-							</div>
-
-						
-
-						</div>
-
-						<!-- navigation -->
-						<div class="navs">
-							<span class="prev fas fa-chevron-left"></span>
-							<span class="next fas fa-chevron-right"></span>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!-- Training Section -->
-			<div class="section service" id="section-services">
-				<div class="content">
-
-					<!-- title -->
-					<div class="titles">
-						<div class="title">Mentorship</div>
-						<div class="subtitle">How I Help Developers Succeed</div>
-					</div>
-
-					<!-- services items -->
-					<div class="service-items">
-
-						<div class="service-col" style="width: 100%;">
-							<div class="service-item">
-								<div class="single-post-text">
-									<p>
-										In <a style="text-decoration: none; color:#923f98" target="_blank" href="https://platform.darrebni.net/" class="company-name">"Darrebni"</a> virtual platform, I mentored software engineering graduates and students, preparing them for successful careers through hands-on training in the Laravel framework. My mentorship focused on real-world applications and team-based development workflows.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-				<div class="content">
-
-					<!-- title -->
-					<div class="titles" style="margin: 40px 0 20px 0;">
-						<div class="subtitle">Key Focus Areas</div>
-					</div>
-
-					<!-- services items -->
-					<div class="service-items">
-
-						<div class="service-col" style="width: 100%;">
-							<div class="service-item">
-								<div class="single-post-text">
-									<p>
-										<b>
-										Real Projects:
-										</b>
-										<br>
-										Practical implementation of real-world projects, developed step-by-step after thorough analysis and planning, enhancing problem-solving and logical thinking skills.
-										<br>
-										<b>
-										Laravel Framework:
-										</b>
-										<br>
-										Enabling participants to build dynamic websites using Laravel effectively.
-										<br>
-										<b>
-										API Development:
-										</b>
-										<br>
-										Creating APIs to support collaborative development within software teams.
-										<br>
-										<b>
-										Performance Optimization:
-										</b>
-										<br>
-										Teaching techniques to maintain fast and smooth website performance.
-										</b>
-										<br>
-										<b>
-										Problem Solving with AI:
-										</b>
-										<br>
-										Guiding mentees on how to properly leverage AI for effective problem-solving.									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-
-
-			<!-- Works -->
-			<div class="section works" id="section-portfolio">
-				<div class="content">
-
-					<!-- title -->
-					<div class="titles">
-						<div class="title">Portfolio</div>
-						<div class="subtitle">Latest works</div>
-					</div>
-
-					<div class="box-items">	
-
-											<!-- portfolio items -->
-											<div class="box-col f-content" style="width: 100%">
-												<div class="box-item">
-													<div class="image">
-														<a href="#popup-9" class="has-popup-media">
-															<img src="images/works/crm1.png" alt="" style="height: auto" />
-															<span class="info">
-																<span class="centrize full-width">
-																	<span class="vertical-center">
-																		<i class="icon fas fa-search"></i>
-																	</span>
-																</span>
-															</span>
-														</a>
-													</div>
-													<div class="desc">
-														<div class="category">Freelance</div>
-														<a href="#popup-9" class="name has-popup-media"> Filament CRM Dashboard
-													</a>
-													</div>
-													<div id="popup-9" class="popup-box mfp-fade mfp-hide">
-														<div class="content">
-															<div class="image">
-																<div class="pic-ctn" style="display: flex; justify-content: center;">
-																	<img src="images/works/crm1.png" alt="" class="pic" style="height: inherit; width: auto;">
-																	<img src="images/works/crm2.png" alt="" class="pic" style="height: inherit; width: auto;">
-																	<img src="images/works/crm3.png" alt="" class="pic" style="height: inherit; width: auto;">
-																	<img src="images/works/crm1.png" alt="" class="pic" style="height: inherit; width: auto;">
-																	<img src="images/works/crm2.png" alt="" class="pic" style="height: inherit; width: auto;">
-																  </div>
-															</div>
-															<div class="desc">
-																<div class="category">Freelance</div>
-																<h4> Filament CRM Dashboard</h4>
-																<p>
-					It is  a CRM Dashboard designed to help businesses manage their sales pipeline efficiently. It includes management for Accounts, Contacts, Leads, Deals, Products, and Users, providing comprehensive insight and control over customer relationships and sales activities.
-																</p>
-																											 <blockquote style=" font-style: italic;
-																 color: white;
-						border-left: 2px solid #68e0cf;
-						padding-left: 20px;
-						margin-bottom: 15px;">
-							I analyzed the project, designed the DataBase, made the Back-end and the Front-end using Filament .
-						</blockquote>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="box-col f-content" style="width: 100%">
-												<div class="box-item">
-													<div class="image">
-														<a href="#popup-0" class="has-popup-media">
-															<img src="images/works/anwar11.png" alt="" style="height: auto" />
-															<span class="info">
-																<span class="centrize full-width">
-																	<span class="vertical-center">
-																		<i class="icon fas fa-search"></i>
-																	</span>
-																</span>
-															</span>
-														</a>
-													</div>
-													<div class="desc">
-														<div class="category">For a company</div>
-														<a href="#popup-0" class="name has-popup-media"> Electricity company
-													</a>
-													</div>
-													<div id="popup-0" class="popup-box mfp-fade mfp-hide">
-														<div class="content">
-															<div class="image">
-																<div class="pic-ctn" style="display: flex; justify-content: center;">
-																	<img src="images/works/anwar11.png" alt="" class="pic" style="height: inherit; width: auto;">
-																	<img src="images/works/anwar22.png" alt="" class="pic" style="height: inherit; width: auto;">
-																	<img src="images/works/anwar33.png" alt="" class="pic" style="height: inherit; width: auto;">
-																	<img src="images/works/anwar11.png" alt="" class="pic" style="height: inherit; width: auto;">
-																	<img src="images/works/anwar22.png" alt="" class="pic" style="height: inherit; width: auto;">
-																  </div>
-															</div>
-															<div class="desc">
-																<div class="category">For a company</div>
-																<h4> Electricity providing company</h4>
-																<p>
-					It is ctricity providing company that controls users 
-					electricity meters and bills, employees Cash Flow, and admins reports.
-																</p>
-																											 <blockquote style=" font-style: italic;
-																 color: white;
-						border-left: 2px solid #68e0cf;
-						padding-left: 20px;
-						margin-bottom: 15px;">
-							I analyzed the project, designed the DataBase, made the Back-end and the Front-end .
-						</blockquote>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											
-					<!-- portfolio items -->
-						<div class="box-col f-content" style="width: 100%">
-							<div class="box-item">
-								<div class="image">
-									<a href="#popup-1" class="has-popup-media">
-										<img src="images/works/najeeb.gif" alt="" style="height: auto" />
-										<span class="info">
-											<span class="centrize full-width">
-												<span class="vertical-center">
-													<i class="icon fas fa-search"></i>
-												</span>
-											</span>
-										</span>
-									</a>
-								</div>
-								<div class="desc">
-									<div class="category">For a company</div>
-									<a href="#popup-1" class="name has-popup-media">Online learning platform
-</a>
-								</div>
-								<div id="popup-1" class="popup-box mfp-fade mfp-hide">
-									<div class="content">
-										<div class="image">
-											<div class="pic-ctn" style="display: flex; justify-content: center;">
-												<img src="images/works/najeeb11.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/najeeb22.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/najeeb33.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/najeeb11.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/najeeb33.png" alt="" class="pic" style="height: inherit; width: auto;">
-											  </div>
-										</div>
-										<div class="desc">
-											<div class="category">For a company</div>
-											<h4>Online learning platform</h4>
-											<p>
-It is an Online learning platform Web application and Mobile app with admin control for classes, subjects, lectures, student payments, subscriptions, and attendance tracking while allowing students to subscribe to classes and attend lectures.
-											</p>
-																						 <blockquote style=" font-style: italic;
-											 color: white;
-    border-left: 2px solid #68e0cf;
-    padding-left: 20px;
-    margin-bottom: 15px;">
-    	I analyzed the project, designed the DataBase, build the control panel and build APIs for the Mobile App.
-    </blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="box-col f-content" style="width: 100%">
-							<div class="box-item">
-								<div class="image">
-									<a href="#popup-2" class="has-popup-media">
-										<img src="images/works/uranus.png" style="height: auto" />
-										<span class="info">
-											<span class="centrize full-width">
-												<span class="vertical-center">
-													<i class="icon fas fa-search"></i>
-												</span>
-											</span>
-										</span>
-									</a>
-								</div>
-								<div class="desc">
-									<div class="category">For a company</div>
-									<a href="#popup-2" class="name has-popup-media">Car rental</a>
-								</div>
-								<div id="popup-2" class="popup-box mfp-fade mfp-hide">
-									<div class="content">
-										<div class="image">
-										<div class="pic-ctn" style="display: flex; justify-content: center;">
-											<img src="images/works/uranus11.png" alt="" class="pic" style="height: inherit; width: auto;">
-											<img src="images/works/uranus22.png" alt="" class="pic" style="height: inherit; width: auto;">
-											<img src="images/works/uranus3.png" alt="" class="pic" style="height: inherit; width: auto;">
-											<img src="images/works/uranus4.png" alt="" class="pic" style="height: inherit; width: auto;">
-											<img src="images/works/uranus55.png" alt="" class="pic" style="height: inherit; width: auto;">
-										  </div>
-										  </div>
-										<div class="desc">
-											<div class="category">For a company</div>
-											<h4>Car rental</h4>
-											<p>
-												 a car rental web application and mobile application that allows users to browse, book, and pay for cars online.
-											</p>
-											 <blockquote style=" font-style: italic;
-											 color: white;
-    border-left: 2px solid #68e0cf;
-    padding-left: 20px;
-    margin-bottom: 15px;">
-    	I analyzed the project, designed the DataBase and made the back-end .
-    </blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="box-col f-content" style="width: 100%">
-							<div class="box-item">
-								<div class="image">
-									<a href="#popup-3" class="has-popup-media">
-										<img src="images/works/vidaFood.png" style="height: auto" />
-										<span class="info">
-											<span class="centrize full-width">
-												<span class="vertical-center">
-													<i class="icon fas fa-search"></i>
-												</span>
-											</span>
-										</span>
-									</a>
-								</div>
-								<div class="desc">
-									<div class="category">For a company</div>
-									<a href="#popup-3" class="name has-popup-media">E-commerce</a>
-								</div>
-								<div id="popup-3" class="popup-box mfp-fade mfp-hide">
-									<div class="content">
-										<div class="image">
-											<div class="pic-ctn" style="display: flex; justify-content: center;">
-												<img src="images/works/vidaFood1.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/vidaFood2.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/vidaFood1.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/vidaFood2.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/vidaFood1.gif" alt="" class="pic" style="height: inherit; width: auto;">
-											  </div>
-										</div>
-										<div class="desc">
-											<div class="category">For a company</div>
-											<h4>E-commerce</h4>
-											<p>
-												 an e-commerce website with product viewing, cart system, and repackaging service.
-											</p>
-											 <blockquote style=" font-style: italic;
-											 color: white;
-    border-left: 2px solid #68e0cf;
-    padding-left: 20px;
-    margin-bottom: 15px;">
-    	I analyzed the project, designed the DataBase and made the Web Application.
-    </blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="box-col f-content" style="width: 100%">
-							<div class="box-item">
-								<div class="image">
-									<a href="#popup-4" class="has-popup-media">
-										<img src="images/works/gymToGo.png" style="height: auto" />
-										<span class="info">
-											<span class="centrize full-width">
-												<span class="vertical-center">
-													<i class="icon fas fa-search"></i>
-												</span>
-											</span>
-										</span>
-									</a>
-								</div>
-								<div class="desc">
-									<div class="category">Freelance</div>
-									<a href="#popup-4" class="name has-popup-media">Fitness platform</a>
-								</div>
-								<div id="popup-4" class="popup-box mfp-fade mfp-hide">
-									<div class="content">
-										<div class="image">
-											<div class="pic-ctn" style="display: flex; justify-content: center;">
-												<img src="images/works/gym11.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/gym22.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/gym33.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/gym44.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/gym55.png" alt="" class="pic" style="height: inherit; width: auto;">
-											  </div>
-										</div>
-										<div class="desc">
-											<div class="category">Freelance</div>
-											<h4>Fitness platform</h4>
-											<p>
-												 an e-commerce website with product viewing, cart system, and repackaging service.
-											</p>
-											 <blockquote style=" font-style: italic;
-											 color: white;
-    border-left: 2px solid #68e0cf;
-    padding-left: 20px;
-    margin-bottom: 15px;">
-    	I analyzed the project, designed the DataBase, made the Web Application build and the APIs for mobile App.
-    </blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="box-col f-content" style="width: 100%">
-							<div class="box-item">
-								<div class="image">
-									<a href="#popup-5" class="has-popup-media">
-										<img src="images/works/timeTracker.gif" style="height: auto" />
-										<span class="info">
-											<span class="centrize full-width">
-												<span class="vertical-center">
-													<i class="icon fas fa-search"></i>
-												</span>
-											</span>
-										</span>
-									</a>
-								</div>
-								<div class="desc">
-									<div class="category">For a company</div>
-									<a href="#popup-5" class="name has-popup-media">Time tracker</a>
-								</div>
-								<div id="popup-5" class="popup-box mfp-fade mfp-hide">
-									<div class="content">
-										<div class="image">
-											<div class="pic-ctn" style="display: flex; justify-content: center;">
-												<img src="images/works/timeTracker.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/timeTracker.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/timeTracker.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/timeTracker.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/timeTracker.gif" alt="" class="pic" style="height: inherit; width: auto;">
-											  </div>
-										</div>
-										<div class="desc">
-											<div class="category">For a company</div>
-											<h4>Time tracker</h4>
-											<p>
-												a web application that lets users track working hours whilst doing tasks and enables teams' managers to calculate members’ salaries.
-											</p>
-											 <blockquote style=" font-style: italic;
-											 color: white;
-    border-left: 2px solid #68e0cf;
-    padding-left: 20px;
-    margin-bottom: 15px;">
-    	I analyzed the Project, designed the DataBase and made The Web Application.
-    </blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="box-col f-content" style="width: 100%">
-							<div class="box-item">
-								<div class="image" style="display: flex; justify-content: center;">
-									<a href="#popup-6" class="has-popup-media">
-										<img src="images/works/realEstate1.gif" style="height: 400px; width: auto;"/>
-										<span class="info">
-											<span class="centrize full-width">
-												<span class="vertical-center">
-													<i class="icon fas fa-search"></i>
-												</span>
-											</span>
-										</span>
-									</a>
-								</div>
-								<div class="desc">
-									<div class="category">For a company</div>
-									<a href="#popup-6" class="name has-popup-media">Real-estate brokers</a>
-								</div>
-								<div id="popup-6" class="popup-box mfp-fade mfp-hide">
-									<div class="content">
-										<div class="image">
-											<div class="pic-ctn" style="display: flex; justify-content: center;">
-												<img src="images/works/realEstate1.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/realEstate2.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/realEstate3.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/realEstate1.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/realEstate2.gif" alt="" class="pic" style="height: inherit; width: auto;">
-											  </div>
-										</div>
-										<div class="desc">
-											<div class="category">For a company</div>
-											<h4>Real-estate brokers</h4>
-											<p>
-												a real estate mobile app that helps buyers to search and look for houses to rent or to buy. Also, it helps to arrange a date with the seller.
-											</p>
-											 <blockquote style=" font-style: italic;
-											 color: white;
-    border-left: 2px solid #68e0cf;
-    padding-left: 20px;
-    margin-bottom: 15px;">
-    	I analyzed the project, designed the DataBase and build APIs for the Booking system inside the App.
-    </blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="box-col f-content" style="width: 100%">
-							<div class="box-item">
-								<div class="image" style="display: flex; justify-content: center;">
-									<a href="#popup-7" class="has-popup-media">
-										<img src="images/works/hhealthCare.png" style="height: 400px; width: auto;" />
-										<span class="info">
-											<span class="centrize full-width">
-												<span class="vertical-center">
-													<i class="icon fas fa-search"></i>
-												</span>
-											</span>
-										</span>
-									</a>
-								</div>
-								<div class="desc">
-									<div class="category">Graduation project</div>
-									<a href="#popup-7" class="name has-popup-media">Health care</a>
-								</div>
-								<div id="popup-7" class="popup-box mfp-fade mfp-hide">
-									<div class="content">
-										<div class="image">
-											<div class="pic-ctn" style="display: flex; justify-content: center;">
-												<img src="images/works/healthCare1.png" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/healthCare2.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/healthCare3.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/healthCare4.gif" alt="" class="pic" style="height: inherit; width: auto;">
-												<img src="images/works/healthCare5.gif" alt="" class="pic" style="height: inherit; width: auto;">
-											  </div>
-										</div>
-										<div class="desc">
-											<div class="category">Graduation project</div>
-											<h4>Health care</h4>
-											<p>
-												a web application that digitizes hospital data and doctors’ prescriptions. In addition, a mobile app that allows patients to view their medical information and reminds them to take their pills.
-											</p>
-											 <blockquote style=" font-style: italic;
-											 color: white;
-    border-left: 2px solid #68e0cf;
-    padding-left: 20px;
-    margin-bottom: 15px;">
-    	I analyzed the Project, designed the DataBase, made The Web Application and build API’s for the Mobile App.
-    </blockquote>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-						<!-- <div class="box-col f-content">
-							<div class="box-item">
-								<div class="image">
-									<a href="#popup-8" class="has-popup-media">
-										<img src="images/works/p7.jpg" alt="" />
-										<span class="info">
-											<span class="centrize full-width">
-												<span class="vertical-center">
-													<i class="icon fas fa-search"></i>
-												</span>
-											</span>
-										</span>
-									</a>
-								</div>
-								<div class="desc">
-									<div class="category">For a company</div>
-									<a href="#popup-8" class="name has-popup-media">Real-estate Brokers</a>
-								</div>
-								<div id="popup-8" class="popup-box mfp-fade mfp-hide">
-									<div class="content">
-										<div class="image">
-											<img src="images/works/p7.jpg" alt="">
-										</div>
-										<div class="desc">
-											<div class="category">For a company</div>
-											<h4>Real-estate Brokers</h4>
-											<p>
-												It is a real estate mobile app that helps buyers to search and look for houses to rent or to buy. Also, it helps to arrange a date with the seller.
-											</p>
-											 <blockquote style=" font-style: italic;
-											 color: white;
-    border-left: 2px solid #68e0cf;
-    padding-left: 20px;
-    margin-bottom: 15px;">
-    	I analyzed the project, designed the DataBase and build APIs for the Booking system inside the App.
-    </blockquote>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
- -->
-					</div>
-
-					<div class="clear"></div>
-				</div>
-			</div>
-
-			<!-- Section Contacts Info >-->
-			<div class="section contacts" id="section-contacts">
-				<div class="content">
-
-					<!-- title -->
-					<div class="titles">
-						<div class="title">Contact</div>
-						<div class="subtitle">Let's talk</div>
-					</div>
-
-					<!-- contact info -->
-					<div class="contact-info text-center" style="width: 100%">
-						<div class="name">Abdul-rahman Al-Jabban</div>
-						<div class="subname">Laravel Back-End developer</div>
-						<div class="info-list">
-							<ul>
-							<li><strong>Birthdate:</strong> 7/6/2000</li>
-							<li><strong>Residence:</strong> Syria</li>
-							<li><strong>Freelance:</strong> Available</li>
-							<li><strong>Address:</strong>Damascus</li>
-							<li><strong>Phone:</strong> +963 937 731 517</li>
-							<li><strong>E-mail:</strong> a.jabban2000@gmail.com</li>
-							</ul>
-						</div>
-						<div class="author">Abdul-rahman</div>
-					</div>
-
-					<div class="clear"></div>
-				</div>
-			</div>
-
-		</div>
-		
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="socials">
-				<a target="_blank" href="https://www.linkedin.com/in/abdul-rahman-al-jabban-817972241">
-					<i class="icon fab fa-linkedin"></i>
-				</a>
-				<a target="_blank" href="https://www.facebook.com/aljabban.a/">
-					<i class="icon fab fa-facebook-f"></i>
-				</a>
-				<a target="_blank" href="https://www.instagram.com/3bodzee/">
-					<i class="icon fab fa-instagram"></i>
-				</a>
-			</div>
-		</footer>
-		
-	</div>
-
-	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/velocity.min.js"></script>
-	<script src="js/jquery.validate.js"></script>
-	<script src="js/magnific-popup.js"></script>
-	<script src="js/typed.js"></script>
-	<script src="js/jarallax.js"></script>
-	<script src="js/jarallax-video.js"></script>
-	<script src="js/jarallax-element.js"></script>
-	<script src="js/imagesloaded.pkgd.js"></script>
-	<script src="js/isotope.pkgd.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/swiper.js"></script>
-	<script src="js/scripts.js"></script>
-
+<body>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">Abdul-Rahman Al-Jabban</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Projects</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="meta">Damascus · Available for select work</p>
+
+        <h1 class="hero__title">
+          Senior back-end developer working with Laravel.
+        </h1>
+
+        <p class="hero__sub">
+          5+ years designing and scaling Laravel systems across finance, healthcare,
+          e-commerce and education. Currently acting tech lead at Ultra Solutions.
+        </p>
+
+        <div class="hero__links">
+          <!-- <a href="#work">Selected work →</a> -->
+          <a href="cv/Abdul-Rahman Al-Jabban Resume.pdf" download>Download CV ↓</a>
+          <a href="mailto:a.jabban2000@gmail.com">a.jabban2000@gmail.com</a>
+        </div>
+      </div>
+
+      <figure class="hero__portrait">
+        <div class="portrait-frame">
+          <span class="portrait-frame__corner portrait-frame__corner--tl"></span>
+          <span class="portrait-frame__corner portrait-frame__corner--tr"></span>
+          <span class="portrait-frame__corner portrait-frame__corner--bl"></span>
+          <span class="portrait-frame__corner portrait-frame__corner--br"></span>
+          <div class="portrait-frame__mat">
+            <img src="images/personal.png" alt="Abdul-Rahman Al-Jabban" />
+          </div>
+        </div>
+      </figure>
+    </section>
+
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="section__head">
+        <h2>Featured projects</h2>
+        <p class="meta">Selected projects</p>
+      </div>
+
+      <div class="work__list" id="workList"></div>
+
+      <div class="work__more">
+        <button id="showMore" type="button">Show more <span>(4)</span></button>
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="section__head">
+        <h2>About</h2>
+      </div>
+
+      <div class="about__body">
+        <p>
+          Back-end engineer with 5+ years designing and scaling Laravel/PHP systems
+          across finance, healthcare, e-commerce and education. Focused on REST API
+          design, multi-tenant architecture and performance — owning systems end to
+          end, from database and security design through deployment.
+        </p>
+        <p>
+          Currently acting tech lead at Ultra Solutions, leading a small engineering
+          team. Previously trained 50+ developers at Darrebni. Based in Damascus.
+        </p>
+
+        <dl class="facts">
+          <div><dt>Location</dt><dd>Damascus, Syria</dd></div>
+          <div><dt>Languages</dt><dd>Arabic (native), English (upper-intermediate)</dd></div>
+          <div><dt>Stack</dt><dd>PHP, Laravel, MySQL</dd></div>
+          <div><dt>Tools</dt><dd>Git, Redis, Docker, CI/CD</dd></div>
+          <div><dt>APIs</dt><dd>RESTful, GraphQL</dd></div>
+          <div><dt>Architecture</dt><dd>Modular architecture, SOLID, design patterns</dd></div>
+          <div><dt>Testing</dt><dd>PHPUnit (unit, feature)</dd></div>
+          <div><dt>Education</dt><dd>Damascus University, Diploma in Software Engineering (2019–2024)</dd></div>
+        </dl>
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="exp" id="experience">
+      <div class="section__head">
+        <h2>Experience</h2>
+      </div>
+
+      <ul class="exp__list">
+        <li>
+          <span class="exp__year">2025 — Present</span>
+          <div>
+            <div class="exp__role">Senior Laravel developer / Acting tech lead</div>
+            <div class="exp__org">Ultra Solutions</div>
+          </div>
+          <p>Architected a multi-tenant SaaS onboarding system with an isolated database per client. Built a Hotel Management System and adapted it into a configurable Villa Management platform. Leading a 3-engineer team across multiple products.</p>
+        </li>
+        <li>
+          <span class="exp__year">2024 — 2025</span>
+          <div>
+            <div class="exp__role">Laravel trainer</div>
+            <div class="exp__org">Darrebni</div>
+          </div>
+          <p>Trained 50+ software engineers on fundamentals, clean code and team-based projects.</p>
+        </li>
+        <li>
+          <span class="exp__year">2023 — 2024</span>
+          <div>
+            <div class="exp__role">Laravel developer &amp; team lead</div>
+            <div class="exp__org">TrendDXB</div>
+          </div>
+          <p>Built <a class="exp__link" href="https://uranuscar.com/" target="_blank" rel="noopener">Uranus<span>↗</span></a>, a car rental platform with rapid booking, and <a class="exp__link" href="https://vida-food.com/" target="_blank" rel="noopener">Vida-Food<span>↗</span></a>, an e-commerce platform for a UAE food supplier. Managed 3 developers and 2 designers.</p>
+        </li>
+        <li>
+          <span class="exp__year">2022 — 2023</span>
+          <div>
+            <div class="exp__role">Laravel developer &amp; team lead</div>
+            <div class="exp__org">Limitless Group</div>
+          </div>
+          <p>Wesal — global payment system for mobile credit and bills in Syria. Improved transaction speeds by 60% via optimised SQL and architecture.</p>
+        </li>
+        <li>
+          <span class="exp__year">2021 — 2022</span>
+          <div>
+            <div class="exp__role">Laravel developer</div>
+            <div class="exp__org">InSoft Online</div>
+          </div>
+          <p>Built productivity tools — time tracking and task management systems.</p>
+        </li>
+        <li>
+          <span class="exp__year">2021 — Present</span>
+          <div>
+            <div class="exp__role">Freelance Laravel developer</div>
+            <div class="exp__org">Self-employed</div>
+          </div>
+          <p>Trend System (ERP for mobile balance distribution), <a class="exp__link" href="https://alsafwamedical.ae/" target="_blank" rel="noopener">Alsafwa<span>↗</span></a> (clinic with insurance integration — 40% fewer manual tasks), Najeeb (e-learning with RBAC, subscriptions and payment tracking).</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>
+        Best reached by email. I usually reply within a day or two.
+      </p>
+
+      <ul class="contact__list">
+        <li><span>Email</span><a href="mailto:a.jabban2000@gmail.com">a.jabban2000@gmail.com</a></li>
+        <li><span>Phone</span><a href="tel:+963937731517">+963 937 731 517</a></li>
+        <li><span>LinkedIn</span><a href="https://linkedin.com/in/abdul-rahman-al-jabban-817972241" target="_blank" rel="noopener">/in/abdul-rahman-al-jabban</a></li>
+        <li><span>GitHub</span><a href="https://github.com" target="_blank" rel="noopener">github.com</a></li>
+        <li><span>Résumé</span><a href="cv/Abdul-Rahman Al-Jabban Resume.pdf" download>Download CV (PDF) ↓</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer class="foot">
+    <span>© <span id="year">2026</span>  Abdul-Rahman Al-Jabban</span>
+    <span>Damascus</span>
+  </footer>
+
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
