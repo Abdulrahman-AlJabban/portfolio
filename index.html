@@ -1,228 +1,987 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0f0f10" />
-  <title>Abdul-Rahman Al-Jabban — Backend Laravel developer</title>
-  <meta name="description" content="Senior backend developer. 5+ years building Laravel systems across finance, healthcare, e-commerce and education. Damascus, Syria." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chairy — Best Furniture Collection For Your Interior</title>
 
-  <!-- Open Graph / social share — update og:url and og:image to absolute URLs after deploy -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Abdul-Rahman Al-Jabban — Backend Laravel developer" />
-  <meta property="og:description" content="Senior backend developer. 5+ years building Laravel systems across finance, healthcare, e-commerce and education." />
-  <meta property="og:image" content="images/personal.png" />
-  <meta property="og:url" content="/" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Abdul-Rahman Al-Jabban — Backend Laravel developer" />
-  <meta name="twitter:description" content="Senior backend developer. 5+ years building Laravel systems across finance, healthcare, e-commerce and education." />
-  <meta name="twitter:image" content="images/personal.png" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Inline SVG favicon — initials AJ on a dark square with warm-sand text -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f0f10'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-family='Inter,sans-serif' font-size='28' font-weight='600' fill='%23c8a87a'%3EAJ%3C/text%3E%3C/svg%3E" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/styles.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="nav" id="nav">
-    <a href="#top" class="nav__brand">Abdul-Rahman Al-Jabban</a>
-    <nav class="nav__links" aria-label="Primary">
-      <a href="#work">Projects</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="nav__burger" id="navBurger" aria-label="Menu">
-      <span></span><span></span>
-    </button>
-  </header>
+    <!-- ============================================================
+         HEADER — 3 tiers: top bar, main header (search), category nav
+    ============================================================= -->
+    <header class="site-header">
 
-  <main id="top">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__inner">
-        <p class="meta">Damascus</p>
-
-        <h1 class="hero__title">
-          Abdul-Rahman
-          <br>
-          Al-Jabban.
-        </h1>
-        <p class="hero__role">Senior back-end developer working with Laravel.</p>
-
-        <p class="hero__sub">
-          5+ years designing and scaling Laravel systems across finance, healthcare,
-          e-commerce and education. Currently acting tech lead at Ultra Solutions.
-        </p>
-
-        <div class="hero__links">
-          <!-- <a href="#work">Selected work →</a> -->
-          <a href="cv/Abdul-Rahman Al-Jabban Resume.pdf" download>Download CV ↓</a>
-          <a href="mailto:a.jabban2000@gmail.com">a.jabban2000@gmail.com</a>
+        <!-- Tier 1: Announcement / top bar -->
+        <div class="header-topbar text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-center justify-content-md-between align-items-center gap-2 small py-2">
+                    <!-- Left: shipping note -->
+                    <span><i class="fa-solid fa-check me-2"></i>Free Shipping On All Orders Over $50</span>
+                    <!-- Right: language + helper links -->
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="topbar-link">Eng <i class="fa-solid fa-chevron-down ms-1 small"></i></a>
+                        <a href="#" class="topbar-link">Faqs</a>
+                        <a href="#" class="topbar-link"><i class="fa-regular fa-circle-question me-1"></i>Need Help</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <figure class="hero__portrait">
-        <div class="portrait-frame">
-          <span class="portrait-frame__corner portrait-frame__corner--tl"></span>
-          <span class="portrait-frame__corner portrait-frame__corner--tr"></span>
-          <span class="portrait-frame__corner portrait-frame__corner--bl"></span>
-          <span class="portrait-frame__corner portrait-frame__corner--br"></span>
-          <div class="portrait-frame__mat">
-            <img src="images/personal.png" alt="Abdul-Rahman Al-Jabban" />
-          </div>
+        <!-- Tier 2: Main header — logo, search, actions -->
+        <div class="header-main bg-hero">
+            <div class="container">
+                <div class="row align-items-center g-3 py-3">
+                    <!-- Logo -->
+                    <div class="col-6 col-lg-3 order-1">
+                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
+                            <i class="fa-solid fa-couch fs-3 text-teal"></i>
+                            <span class="fs-4 fw-bold text-dark-navy">Comforty</span>
+                        </a>
+                    </div>
+
+                    <!-- Search bar -->
+                    <div class="col-12 col-lg-6 order-3 order-lg-2">
+                        <form class="header-search d-flex bg-white rounded-3 overflow-hidden" role="search">
+                            <input class="form-control border-0 shadow-none" type="search" placeholder="Search here..."
+                                aria-label="Search">
+                            <button class="btn text-dark-navy px-3" type="submit" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Actions: cart, wishlist, account -->
+                    <div class="col-6 col-lg-3 order-2 order-lg-3">
+                        <div class="d-flex align-items-center justify-content-end gap-2 gap-sm-3">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 bg-white rounded-3 px-3 py-2 text-decoration-none text-dark-navy">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="d-none d-sm-inline">Cart</span>
+                                <span class="badge rounded-pill bg-teal">2</span>
+                            </a>
+                            <a href="#"
+                                class="header-icon-btn bg-white text-dark-navy" aria-label="Wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </a>
+                            <a href="#"
+                                class="header-icon-btn bg-white text-dark-navy" aria-label="Account">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </figure>
+
+        <!-- Tier 3: Category / main navigation -->
+        <div class="header-nav bg-white border-top">
+            <nav class="navbar navbar-expand-lg py-2">
+                <div class="container">
+                    <!-- All categories button -->
+                    <button class="btn btn-categories d-flex align-items-center gap-2 fw-medium" type="button">
+                        <i class="fa-solid fa-bars"></i> All Categories
+                    </button>
+
+                    <!-- Mobile toggler for the nav links -->
+                    <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#categoryNav" aria-controls="categoryNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Collapsible nav content -->
+                    <div class="collapse navbar-collapse" id="categoryNav">
+                        <ul class="navbar-nav ms-lg-4 gap-lg-3 my-2 my-lg-0">
+                            <li class="nav-item"><a class="nav-link active fw-medium" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link fw-medium" href="#">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link fw-medium" href="#">Product</a></li>
+                            <li class="nav-item"><a class="nav-link fw-medium" href="#">Pages</a></li>
+                            <li class="nav-item"><a class="nav-link fw-medium" href="#">About</a></li>
+                        </ul>
+
+                        <!-- Contact (right side) -->
+                        <span class="ms-lg-auto text-muted small">
+                            Contact: <a href="tel:8085550111" class="fw-semibold text-dark-navy text-decoration-none">(808)
+                                555-0111</a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- ============================================================
+         HERO SLIDER — Main banner carousel built with Swiper
+    ============================================================= -->
+    <section class="hero bg-hero">
+        <div class="container position-relative">
+            <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="row align-items-center g-4 py-4 py-lg-5">
+                            <!-- Text column -->
+                            <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+                                <p class="text-uppercase text-muted fw-semibold letter-spacing mb-3">Welcome To Chairy</p>
+                                <h1 class="display-3 fw-bold text-dark-navy lh-sm mb-4">
+                                    Best Furniture Collection For Your Interior.
+                                </h1>
+                                <a href="#" class="btn btn-teal btn-lg rounded-3 px-4 py-2">
+                                    Shop Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                            <!-- Image column -->
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hero-img-wrap position-relative">
+                                    <span class="discount-badge text-center">
+                                        <span class="d-block fw-bold text-teal-red fs-4">54%</span>
+                                        <span class="d-block small text-muted">Discount</span>
+                                    </span>
+                                    <img src="https://i.ibb.co/9wY3pXJ/chair.png"
+                                        onerror="this.src='https://www.pngmart.com/files/22/Chair-PNG-Isolated-HD.png'"
+                                        class="img-fluid d-block mx-auto hero-chair" alt="Modern lounge chair">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="row align-items-center g-4 py-4 py-lg-5">
+                            <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+                                <p class="text-uppercase text-muted fw-semibold letter-spacing mb-3">Welcome To Chairy</p>
+                                <h1 class="display-3 fw-bold text-dark-navy lh-sm mb-4">
+                                    Modern Chairs Designed For Comfort.
+                                </h1>
+                                <a href="#" class="btn btn-teal btn-lg rounded-3 px-4 py-2">
+                                    Shop Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hero-img-wrap position-relative">
+                                    <span class="discount-badge text-center">
+                                        <span class="d-block fw-bold text-teal-red fs-4">40%</span>
+                                        <span class="d-block small text-muted">Discount</span>
+                                    </span>
+                                    <img src="https://www.pngmart.com/files/22/Chair-PNG-Isolated-HD.png"
+                                        class="img-fluid d-block mx-auto hero-chair" alt="Comfortable designer chair">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="row align-items-center g-4 py-4 py-lg-5">
+                            <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start">
+                                <p class="text-uppercase text-muted fw-semibold letter-spacing mb-3">Welcome To Chairy</p>
+                                <h1 class="display-3 fw-bold text-dark-navy lh-sm mb-4">
+                                    Premium Quality For Your Home.
+                                </h1>
+                                <a href="#" class="btn btn-teal btn-lg rounded-3 px-4 py-2">
+                                    Shop Now <i class="fa-solid fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 order-1 order-lg-2">
+                                <div class="hero-img-wrap position-relative">
+                                    <span class="discount-badge text-center">
+                                        <span class="d-block fw-bold text-teal-red fs-4">25%</span>
+                                        <span class="d-block small text-muted">Discount</span>
+                                    </span>
+                                    <img src="https://www.pngmart.com/files/22/Chair-PNG-Isolated-HD.png"
+                                        class="img-fluid d-block mx-auto hero-chair" alt="Premium home chair">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Custom navigation arrows -->
+            <button class="hero-nav hero-prev" aria-label="Previous slide">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="hero-nav hero-next" aria-label="Next slide">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
     </section>
 
+    <!-- ============================================================
+         FEATURES BAR — Floating card with 4 service highlights
+    ============================================================= -->
+    <section class="features">
+        <div class="container">
+            <div class="card border-0 shadow features-card rounded-4">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="row g-4 text-center text-md-start">
 
-    <!-- WORK -->
-    <section class="work" id="work">
-      <div class="section__head">
-        <h2>Featured projects</h2>
-        <p class="meta">Selected projects</p>
-      </div>
+                        <!-- Feature: Discount -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                                <i class="fa-solid fa-box-open fs-2 text-dark-navy"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1 text-dark-navy">Discount</h6>
+                                    <p class="small text-muted mb-0">Every week new sales</p>
+                                </div>
+                            </div>
+                        </div>
 
-      <div class="work__list" id="workList"></div>
+                        <!-- Feature: Free Delivery -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                                <i class="fa-solid fa-truck fs-2 text-dark-navy"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1 text-dark-navy">Free Delivery</h6>
+                                    <p class="small text-muted mb-0">100% Free for all orders</p>
+                                </div>
+                            </div>
+                        </div>
 
-      <div class="work__more">
-        <button id="showMore" type="button">Show more <span>(4)</span></button>
-      </div>
+                        <!-- Feature: Great Support 24/7 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                                <i class="fa-solid fa-headset fs-2 text-dark-navy"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1 text-dark-navy">Great Support 24/7</h6>
+                                    <p class="small text-muted mb-0">We care your experiences</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Feature: Secure Payment -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                                <i class="fa-solid fa-shield-halved fs-2 text-dark-navy"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1 text-dark-navy">Secure Payment</h6>
+                                    <p class="small text-muted mb-0">100% Secure Payment Method</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="section__head">
-        <h2>About</h2>
-      </div>
-
-      <div class="about__body">
-        <p>
-          Back-end engineer with 5+ years designing and scaling Laravel/PHP systems
-          across finance, healthcare, e-commerce and education. Focused on REST API
-          design, multi-tenant architecture and performance — owning systems end to
-          end, from database and security design through deployment.
-        </p>
-        <p>
-          Currently acting tech lead at Ultra Solutions, leading a small engineering
-          team. Previously trained 50+ developers at Darrebni. Based in Damascus.
-        </p>
-
-        <dl class="facts">
-          <div><dt>Location</dt><dd>Damascus, Syria</dd></div>
-          <div><dt>Languages</dt><dd>Arabic (native), English (upper-intermediate)</dd></div>
-          <div><dt>Stack</dt><dd>PHP, Laravel, MySQL</dd></div>
-          <div><dt>Tools</dt><dd>Git, Redis, Docker, CI/CD</dd></div>
-          <div><dt>APIs</dt><dd>RESTful, GraphQL</dd></div>
-          <div><dt>Architecture</dt><dd>Modular architecture, SOLID, design patterns</dd></div>
-          <div><dt>Testing</dt><dd>PHPUnit (unit, feature)</dd></div>
-          <div><dt>Education</dt><dd>Damascus University, Diploma in Software Engineering (2019–2024)</dd></div>
-        </dl>
-      </div>
+    <!-- ============================================================
+         BRANDS — Trusted partner / brand logos row
+    ============================================================= -->
+    <section class="brands py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between g-4 text-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <span class="brand-logo fs-4 fw-bold" style="color:#ff6b3d;">zapier</span>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <span class="brand-logo fs-4 fw-bold text-dark-navy">pipedrive</span>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <span class="brand-logo fs-4 fw-bold" style="color:#8a9a5b;">
+                        <i class="fa-solid fa-building-columns"></i> CIB BANK
+                    </span>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <span class="brand-logo fs-2 fw-bold text-danger"><i class="fa-solid fa-bolt"></i></span>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <span class="brand-logo fs-5 fw-bold text-dark-navy">BURNT TOAST</span>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <span class="brand-logo fs-5 fw-bold" style="color:#3aaa35;">
+                        <i class="fa-solid fa-file-lines"></i> PandaDoc
+                    </span>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- ============================================================
+         FEATURED PRODUCTS — Product cards slider built with Swiper
+    ============================================================= -->
+    <section class="featured-products py-5">
+        <div class="container">
+            <!-- Section header with slider controls -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold text-dark-navy mb-0">Featured Products</h2>
+                <div class="d-flex gap-2">
+                    <button class="circle-nav featured-prev" aria-label="Previous">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="circle-nav featured-next" aria-label="Next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
 
-    <!-- EXPERIENCE -->
-    <section class="exp" id="experience">
-      <div class="section__head">
-        <h2>Experience</h2>
-      </div>
+            <!-- Products slider -->
+            <div class="swiper productSwiper">
+                <div class="swiper-wrapper">
 
-      <ul class="exp__list">
-        <li>
-          <span class="exp__year">2025 — Present</span>
-          <div>
-            <div class="exp__role">Senior Laravel developer / Acting tech lead</div>
-            <div class="exp__org">Ultra Solutions</div>
-          </div>
-          <p>Architected a multi-tenant SaaS onboarding system with an isolated database per client. Built a Hotel Management System and adapted it into a configurable Villa Management platform. Leading a 3-engineer team across multiple products.</p>
-        </li>
-        <li>
-          <span class="exp__year">2024 — 2025</span>
-          <div>
-            <div class="exp__role">Laravel trainer</div>
-            <div class="exp__org">Darrebni</div>
-          </div>
-          <p>Trained 50+ software engineers on fundamentals, clean code and team-based projects.</p>
-        </li>
-        <li>
-          <span class="exp__year">2023 — 2024</span>
-          <div>
-            <div class="exp__role">Laravel developer &amp; team lead</div>
-            <div class="exp__org">TrendDXB</div>
-          </div>
-          <p>Built <a class="exp__link" href="https://uranuscar.com/" target="_blank" rel="noopener">Uranus<span>↗</span></a>, a car rental platform with rapid booking, and <a class="exp__link" href="https://vida-food.com/" target="_blank" rel="noopener">Vida-Food<span>↗</span></a>, an e-commerce platform for a UAE food supplier. Managed 3 developers and 2 designers.</p>
-        </li>
-        <li>
-          <span class="exp__year">2022 — 2023</span>
-          <div>
-            <div class="exp__role">Laravel developer &amp; team lead</div>
-            <div class="exp__org">Limitless Group</div>
-          </div>
-          <p>Wesal — global payment system for mobile credit and bills in Syria. Improved transaction speeds by 60% via optimised SQL and architecture.</p>
-        </li>
-        <li>
-          <span class="exp__year">2021 — 2022</span>
-          <div>
-            <div class="exp__role">Laravel developer</div>
-            <div class="exp__org">InSoft Online</div>
-          </div>
-          <p>Built productivity tools — time tracking and task management systems.</p>
-        </li>
-        <li>
-          <span class="exp__year">2021 — Present</span>
-          <div>
-            <div class="exp__role">Freelance Laravel developer</div>
-            <div class="exp__org">Self-employed</div>
-          </div>
-          <p>Trend System (ERP for mobile balance distribution), <a class="exp__link" href="https://alsafwamedical.ae/" target="_blank" rel="noopener">Alsafwa<span>↗</span></a> (clinic with insurance integration — 40% fewer manual tasks), Najeeb (e-learning with RBAC, subscriptions and payment tracking).</p>
-        </li>
-      </ul>
+                    <!-- Product 1 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <span class="badge product-badge bg-teal">New</span>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                </div>
+                                <button class="cart-btn active" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <span class="badge product-badge bg-danger">Sale</span>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                    <span class="text-muted text-decoration-line-through small ms-1">$30</span>
+                                </div>
+                                <button class="cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                </div>
+                                <button class="cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                </div>
+                                <button class="cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 (extra for slider) -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <span class="badge product-badge bg-teal">New</span>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1561677843-39dee7a319ca?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                </div>
+                                <button class="cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- ============================================================
+         TOP CATEGORIES — Large category cards slider built with Swiper
+    ============================================================= -->
+    <section class="top-categories py-5">
+        <div class="container">
+            <!-- Section header with slider controls -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold text-dark-navy mb-0">Top Categories</h2>
+                <div class="d-flex gap-2">
+                    <button class="circle-nav category-prev" aria-label="Previous">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="circle-nav category-next" aria-label="Next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <p>
-        Best reached by email. I usually reply within a day or two.
-      </p>
+            <!-- Categories slider -->
+            <div class="swiper categorySwiper">
+                <div class="swiper-wrapper">
 
-      <ul class="contact__list">
-        <li><span>Email</span><a href="mailto:a.jabban2000@gmail.com">a.jabban2000@gmail.com</a></li>
-        <li><span>Phone</span><a href="tel:+963937731517">+963 937 731 517</a></li>
-        <li><span>LinkedIn</span><a href="https://linkedin.com/in/abdul-rahman-al-jabban-817972241" target="_blank" rel="noopener">/in/abdul-rahman-al-jabban</a></li>
-        <li><span>GitHub</span><a href="https://github.com" target="_blank" rel="noopener">github.com</a></li>
-        <li><span>Résumé</span><a href="cv/Abdul-Rahman Al-Jabban Resume.pdf" download>Download CV (PDF) ↓</a></li>
-      </ul>
+                    <!-- Category 1 -->
+                    <div class="swiper-slide">
+                        <div class="category-card rounded-4 overflow-hidden position-relative">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=600&q=80"
+                                class="img-fluid w-100" alt="Wing Chair">
+                            <div class="category-overlay text-white">
+                                <h5 class="fw-bold mb-1">Wing Chair</h5>
+                                <p class="small mb-0 opacity-75">3,584 Products</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="swiper-slide">
+                        <div class="category-card rounded-4 overflow-hidden position-relative">
+                            <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=600&q=80"
+                                class="img-fluid w-100" alt="Wooden Chair">
+                            <div class="category-overlay text-white">
+                                <h5 class="fw-bold mb-1">Wooden Chair</h5>
+                                <p class="small mb-0 opacity-75">157 Products</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="swiper-slide">
+                        <div class="category-card rounded-4 overflow-hidden position-relative">
+                            <img src="https://images.unsplash.com/photo-1505797149-0b0a08ca0f7e?w=600&q=80"
+                                class="img-fluid w-100" alt="Desk Chair">
+                            <div class="category-overlay text-white">
+                                <h5 class="fw-bold mb-1">Desk Chair</h5>
+                                <p class="small mb-0 opacity-75">154 Products</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 (extra for slider) -->
+                    <div class="swiper-slide">
+                        <div class="category-card rounded-4 overflow-hidden position-relative">
+                            <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=600&q=80"
+                                class="img-fluid w-100" alt="Lounge Chair">
+                            <div class="category-overlay text-white">
+                                <h5 class="fw-bold mb-1">Lounge Chair</h5>
+                                <p class="small mb-0 opacity-75">212 Products</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </section>
 
-  </main>
+    <!-- ============================================================
+         OUR PRODUCTS — Filterable product grid (Bootstrap grid)
+    ============================================================= -->
+    <section class="our-products py-5">
+        <div class="container">
+            <!-- Centered heading -->
+            <h2 class="fw-bold text-dark-navy text-center mb-3">Our Products</h2>
 
+            <!-- Filter tabs -->
+            <ul class="nav justify-content-center flex-wrap gap-2 gap-md-4 product-filter mb-5">
+                <li class="nav-item"><a class="nav-link active" href="#">All</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Newest</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Trending</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Best Sellers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Featured</a></li>
+            </ul>
 
-  <footer class="foot">
-    <span>© <span id="year">2026</span>  Abdul-Rahman Al-Jabban</span>
-    <span>Damascus</span>
-  </footer>
+            <!-- Products grid: 4 columns (desktop) -> 2 (tablet) -> 1 (mobile) -->
+            <div class="row g-4">
 
+                <!-- Product 1 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card border-0 h-100">
+                        <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                            <span class="badge product-badge bg-teal">New</span>
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500&q=80"
+                                class="img-fluid w-100" alt="Library Stool Chair">
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                            <div>
+                                <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                <span class="fw-bold text-dark-navy">$20</span>
+                            </div>
+                            <button class="cart-btn active" aria-label="Add to cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- PROJECT MODAL -->
-  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal__backdrop" data-close></div>
-    <div class="modal__panel">
-      <button class="modal__close" data-close aria-label="Close">×</button>
-      <div class="modal__content" id="modalContent"></div>
-    </div>
-  </div>
+                <!-- Product 2 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card border-0 h-100">
+                        <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                            <span class="badge product-badge bg-danger">Sale</span>
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&q=80"
+                                class="img-fluid w-100" alt="Library Stool Chair">
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                            <div>
+                                <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                <span class="fw-bold text-dark-navy">$20</span>
+                                <span class="text-muted text-decoration-line-through small ms-1">$30</span>
+                            </div>
+                            <button class="cart-btn" aria-label="Add to cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-  <script src="js/main.js" defer></script>
+                <!-- Product 3 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card border-0 h-100">
+                        <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&q=80"
+                                class="img-fluid w-100" alt="Library Stool Chair">
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                            <div>
+                                <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                <span class="fw-bold text-dark-navy">$20</span>
+                            </div>
+                            <button class="cart-btn" aria-label="Add to cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card border-0 h-100">
+                        <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?w=500&q=80"
+                                class="img-fluid w-100" alt="Library Stool Chair">
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                            <div>
+                                <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                <span class="fw-bold text-dark-navy">$20</span>
+                            </div>
+                            <button class="cart-btn" aria-label="Add to cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card border-0 h-100">
+                        <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                            <span class="badge product-badge bg-teal">New</span>
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1561677843-39dee7a319ca?w=500&q=80"
+                                class="img-fluid w-100" alt="Library Stool Chair">
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                            <div>
+                                <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                <span class="fw-bold text-dark-navy">$20</span>
+                            </div>
+                            <button class="cart-btn" aria-label="Add to cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card border-0 h-100">
+                        <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                            <span class="badge product-badge bg-danger">Sale</span>
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&q=80"
+                                class="img-fluid w-100" alt="Library Stool Chair">
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                            <div>
+                                <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                <span class="fw-bold text-dark-navy">$20</span>
+                                <span class="text-muted text-decoration-line-through small ms-1">$30</span>
+                            </div>
+                            <button class="cart-btn" aria-label="Add to cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card border-0 h-100">
+                        <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=500&q=80"
+                                class="img-fluid w-100" alt="Library Stool Chair">
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                            <div>
+                                <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                <span class="fw-bold text-dark-navy">$20</span>
+                            </div>
+                            <button class="cart-btn" aria-label="Add to cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card product-card border-0 h-100">
+                        <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500&q=80&sat=-50"
+                                class="img-fluid w-100" alt="Library Stool Chair">
+                        </div>
+                        <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                            <div>
+                                <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                <span class="fw-bold text-dark-navy">$20</span>
+                            </div>
+                            <button class="cart-btn" aria-label="Add to cart">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         RECENTLY ADDED — Product cards slider built with Swiper
+    ============================================================= -->
+    <section class="recently-added py-5">
+        <div class="container">
+            <!-- Section header with slider controls -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold text-dark-navy mb-0">Recently Added</h2>
+                <div class="d-flex gap-2">
+                    <button class="circle-nav recent-prev" aria-label="Previous">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="circle-nav recent-next" aria-label="Next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Recently added slider -->
+            <div class="swiper recentSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Product 1 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <span class="badge product-badge bg-teal">New</span>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                </div>
+                                <button class="cart-btn active" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <span class="badge product-badge bg-danger">Sale</span>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                    <span class="text-muted text-decoration-line-through small ms-1">$30</span>
+                                </div>
+                                <button class="cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                </div>
+                                <button class="cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                </div>
+                                <button class="cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 (extra for slider) -->
+                    <div class="swiper-slide">
+                        <div class="card product-card border-0 h-100">
+                            <div class="product-thumb position-relative rounded-3 overflow-hidden">
+                                <span class="badge product-badge bg-teal">New</span>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="https://images.unsplash.com/photo-1561677843-39dee7a319ca?w=500&q=80"
+                                    class="img-fluid w-100" alt="Library Stool Chair">
+                            </div>
+                            <div class="card-body px-0 d-flex justify-content-between align-items-end">
+                                <div>
+                                    <h6 class="text-teal fw-semibold mb-1">Library Stool Chair</h6>
+                                    <span class="fw-bold text-dark-navy">$20</span>
+                                </div>
+                                <button class="cart-btn" aria-label="Add to cart">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER — Brand, link columns, newsletter & bottom bar
+    ============================================================= -->
+    <footer class="site-footer pt-5">
+        <div class="container">
+            <div class="row g-4 pb-5">
+
+                <!-- Brand + about + social -->
+                <div class="col-12 col-lg-4">
+                    <a href="#" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                        <i class="fa-solid fa-couch fs-3 text-teal"></i>
+                        <span class="fs-4 fw-bold text-dark-navy">Comforty</span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-5">
+                        Vivamus tristique odio sit amet velit semper,<br>
+                        eu posuere turpis interdum.<br>
+                        Cras egestas purus
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#" class="social-link active" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Category links -->
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-uppercase text-muted footer-heading mb-3">Category</h6>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="#">Sofa</a></li>
+                        <li><a href="#">Armchair</a></li>
+                        <li><a href="#">Wing Chair</a></li>
+                        <li><a href="#" class="active">Desk Chair</a></li>
+                        <li><a href="#">wooden Chair</a></li>
+                        <li><a href="#">Park Bench</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support links -->
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-uppercase text-muted footer-heading mb-3">Support</h6>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="#">Help &amp; Support</a></li>
+                        <li><a href="#">Tearms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-12 col-lg-4">
+                    <h6 class="text-uppercase text-muted footer-heading mb-3">Newsletter</h6>
+                    <form class="d-flex flex-column flex-sm-row gap-2 mb-3">
+                        <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+                        <button type="submit" class="btn btn-teal px-4 text-nowrap">Subscribe</button>
+                    </form>
+                    <p class="text-muted small mb-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam tincidunt erat enim.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom py-4">
+            <div class="container">
+                <div class="row align-items-center g-3">
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <p class="text-muted small mb-0">
+                            @ 2021 - Blogy - Designed &amp; Develop by <span class="fw-semibold">Zakirsoft</span>
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex justify-content-center justify-content-md-end align-items-center gap-3 fs-3 text-muted">
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-amex"></i>
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         SCRIPTS
+    ============================================================= -->
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Init -->
+    <script src="script.js"></script>
 </body>
+
 </html>
